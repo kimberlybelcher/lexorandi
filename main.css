@@ -1,0 +1,690 @@
+:root {
+  /* root color variables */
+  --bright-blue: #007bff;
+  --light-grey-body: #fafafa;
+  --ghost-white: #f5f5fA;
+  --alice-blue: aliceblue;
+  --footer-slate: #e6e8f1;
+  --white: white;
+  --body-font: #666;
+  --slate-gray: lightslategray;
+  --silver: silver;
+  --graphite: #506578;
+  --trench-blue: #406885;
+  --light-blue: #d0e9fe;
+  --alice-blue: aliceblue;
+  --chocolate: rgb(210, 105, 30);
+  --maroon: #9c2b33;
+  --cyan: #b6d1d4;
+  --nd-blue: #20364c;
+  --nd-blue-half: rgba(255, 255, 255, .5);
+  --nd-gold: #c99700;
+  --page-bg: #f7f9fa;
+  --light-gray: #e2e6ea;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: var(--page-bg);
+  color: var(--graphite);
+  font-size: 1rem;
+}
+
+p, ul, li td, tr, .card, li {
+  color: var(--graphite);
+  font-size: 1rem;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+#wrapper a {
+  color: var(--bright-blue);
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.language {
+  margin-right: .15rem;
+  margin-left: .15rem;
+  color: var(--white);
+  padding: .5rem;
+  font-size: 1rem;
+  /* font-variant: small-caps; */
+}
+
+.list-group-item-action:hover {
+  background: aliceblue;
+}
+
+.zoom-room {
+  cursor: pointer;
+}
+
+/* Schedule page ------------------------------------------- */
+#scheduled-events .card-header h5 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--maroon);
+}
+
+#scheduled-events .accordion .card {
+  margin-bottom: .5rem;
+}
+
+#scheduled-events .card-header {
+  padding: .2rem;
+  /* background: none !important; */
+  border: none;
+}
+
+#scheduled-events .accordion .card-body {
+  padding: .5rem .3rem .5rem 1rem;
+  background: none !important;
+  border: none;
+}
+
+.author {
+  display: block;
+  color: var(--graphite);
+  font-variant: small-caps;
+}
+
+/* Action cards -------------------------------------------- */
+#action-cards .card {
+  margin-top: 0;
+}
+
+#action-cards li {
+  background: transparent;
+}
+
+#action-cards .card {
+  border-radius: 0;
+}
+
+/* Jumbotron ----------------------------------------------- */
+.jumbotron {
+  /* linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), */
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../img/banner.jpg");
+  box-sizing: border-box;
+  font-style: normal;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 375px;
+  margin-bottom: 0 !important;
+}
+
+.jumbotron h1, .jumbotron p {
+  /* text-shadow: 1px 1px lightslategray; */
+}
+
+/* South Bend Time ----------------------------------------- */
+.realtime {
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.timedescription {
+  font-variant: small-caps;
+  font-size: 1.5rem !important;
+  cursor: help;
+}
+
+/* Guide page ----------------------------------------------- */
+.sub-sub-header {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-variant: small-caps;
+  background: var(--graphite);
+  color: var(--white);
+}
+
+/* Navbar -------------------------------------------------- */
+.navbar-dark {
+  background-color: var(--nd-blue) !important;
+  border-top: 3px solid var(--nd-gold);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--nd-blue-half);
+   !important;
+}
+
+.navbar-nav .nav-item a:hover {
+  background: var(--nd-blue-half);
+  color: var(--white) !important;
+}
+
+/* Action Cards ------------------------------------------  */
+#action-cards {
+  margin-top: 5rem;
+}
+
+/* colors ------------------------------------------------- */
+.maroon {
+  color: var(--maroon);
+}
+
+.green {
+  color: green !important;
+}
+
+.white {
+  color: var(--white);
+}
+
+.alice-blue {
+  color: var(--alice-blue);
+}
+
+.bg-alice-blue {
+  background: var(--alice-blue);
+}
+
+.nd-blue {
+  color: var(--nd-blue) !important;
+}
+
+.bg-nd-blue {
+  background: var(--nd-blue);
+}
+
+.bg-light-gray {
+  background: var(--light-gray);
+}
+
+.bg-slight {
+  background: #f4f6f6;
+}
+
+.bg-very-slight {
+  background: #f9f9fb;
+}
+
+.badge-nd-blue {
+  background: var(--nd-blue);
+}
+
+.nd-gold {
+  color: var(--nd-gold);
+}
+
+.graphite {
+  color: var(--graphite);
+}
+
+.bg-silvery {
+  background: #dee2e6;
+}
+
+.bright-blue {
+  color: var(--bright-blue);
+}
+
+.light-slate-gray {
+  color: var(--slate-gray);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg-timezone,
+.sponsor-timezone {
+  background: rgba(32, 54, 76, .6);
+}
+
+.nyt-paris {
+  font-variant: small-caps;
+  color: var(--graphite);
+  margin-left: .5rem;
+  font-size: 110%;
+}
+
+.ml-10 {
+  margin-left: 5rem;
+}
+
+.thick-bottom-border {
+  border-bottom: 3px solid silver;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+}
+
+.display-6 {
+  font-size: 1.7rem;
+}
+
+.display-7 {
+  font-size: 1.4rem;
+  color: var(--graphite);
+  opacity: .8;
+}
+
+.mt-larger {
+  margin-top: 7rem;
+}
+
+.btn-white {
+  background: var(--white);
+}
+
+/* Tooltips ----------------------------------------------- */
+.tooltip {
+  margin-top: .5rem;
+}
+
+.tooltip .tooltip-inner {
+  background-color: var(--graphite);
+  font-size: .85rem;
+  padding: .35rem;
+  color: var(--white);
+}
+
+.tooltip.bs-tooltip-right .arrow:before {
+  /* border-right-color: #00cc00 !important; */
+  display: none;
+}
+
+.tooltip.bs-tooltip-left .arrow:before {
+  /* border-left-color: #00cc00 !important; */
+  display: none;
+}
+
+.tooltip.bs-tooltip-bottom .arrow:before {
+  /* border-bottom-color: #00cc00 !important; */
+  display: none;
+}
+
+.tooltip.bs-tooltip-top .arrow:before {
+  /* border-top-color: #00cc00 !important; */
+  display: none;
+}
+
+/* Back to top button ------------------------------------- */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--bright-blue);
+  color: var(--white) !important;
+  padding: 8px 4px 10px 4px;
+  border-radius: 2px 0 0 2px;
+  font-size: 1rem;
+  cursor: pointer !important;
+}
+
+#back-to-top:hover {
+  background-color: var(--bright-blue);
+  color: var(--white);
+}
+
+/* footer -------------------------------------------------- */
+#main-footer {
+  background: var(--nd-blue);
+}
+
+#main-footer a {
+  color: var(--white);
+}
+
+#nd-footer-links {
+  background: #143865;
+}
+
+#nd-footer-links a {
+  color: var(--white);
+}
+
+#social-icons a {
+  color: var(--white);
+}
+
+#congress-span {
+  font-variant: small-caps;
+  font-size: larger;
+}
+
+/* sponsors ---------------------------------------------- */
+#sponsors {
+  /* background: rgba(176, 196, 222,.3) !important; */
+  margin-top: 5rem;
+}
+
+#thanks {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  font-size: 1.75rem;
+  text-align: center;
+  color: var(--graphite);
+}
+
+/* Keynote/plenary Cards and presidential address ---------------------------- */
+.plenary-title {
+  font-variant: small-caps;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.plenary-title span {
+  font-size: 1.5rem;
+}
+
+.col-border-right {
+  border-right: 1px solid var(--silver);
+}
+
+.col-border-top {
+  border-top: none;
+}
+
+@media screen and (max-width: 540px) {
+  .col-border-right {
+    border-right: none;
+  }
+
+  .col-border-top {
+    border-top: 1px solid var(--silver);
+    padding-top: 2rem;
+  }
+}
+
+.text-larger {
+  font-size: larger;
+}
+
+.text-smaller {
+  font-size: .9rem;
+}
+
+.role-badge {
+  background: rgba(176, 196, 222, .4);
+  color: var(--graphite);
+  font-size: .85rem;
+}
+
+.bg-cornflower {
+  background: rgba(176, 196, 222, .4);
+}
+
+.bg-trench-blue {
+  background: var(--trench-blue);
+}
+
+#keynote-cards {
+  margin-top: 2rem;
+  margin-bottom: 16rem !important;
+}
+
+#presidential-address {
+  padding-bottom: 8rem;
+  background: var(--nd-blue) !important;
+  margin-top: -7rem;
+  margin-bottom: 2rem;
+}
+
+#keynote-cards .card,
+#presidential-address .card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#keynote-cards .card-header,
+#presidential-address .card-header {
+  /* background: rgba(176, 196, 222, .4); */
+  border: 0;
+  border-radius: 0 !important;
+  padding: 1.2rem 1.5rem;
+}
+
+#keynote-cards .card-header {
+  background: var(--white);
+}
+
+#view-presidential-address-button:hover {
+  /* color: var(--bright-blue) !important; */
+}
+
+.keynote-card-steps {
+  background: var(--bright-blue);
+  color: var(--white);
+  padding: .18rem .6rem;
+  margin-right: .75rem;
+  border-radius: 1rem;
+  line-height: 1.5
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#keynote-cards .card-footer,
+#presidential-address .card-footer {
+  background: var(--white);
+}
+
+#schedule-content .tab-pane {
+  background: var(--white) !important;
+}
+
+#talks-div .card-header {
+  min-height: 11.5rem;
+}
+
+#talks-div .respondent {
+  clear: both !important;
+  width: 100%;
+}
+
+.blockquote {
+  margin-top: 3rem;
+  /* font-style: italic; */
+}
+
+.presenter {
+  color: var(--slate-gray);
+}
+
+/* Flags section ------------------------------------------------------*/
+.flags>span {
+  font-size: 2rem !important;
+  width: 50px;
+  display: inline-block;
+}
+
+.opacity-half {
+  opacity: .25;
+}
+
+.reduced-opacity {
+  opacity: .6;
+}
+
+/* FAQ accordions ---------------------------------------------------- */
+#faq-accordions,
+#faq-orientation {
+  border-radius: 0;
+}
+
+#faq-accordions .card,
+#faq-orientation .card {
+  margin-bottom: 1rem;
+  background: white;
+  border: 0;
+  border-radius: 0 !important;
+}
+
+#faq-accordions .card-header {
+  background: white;
+  /* padding-bottom: 1rem; */
+  border-bottom: none;
+}
+
+.fa-rotate-45 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.fa-rotate-90 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.card-number {
+  margin-top: -2.75rem;
+  z-index: 100;
+  font-size: 2.5rem;
+  font-style: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  color: var(--bright-blue);
+  margin-bottom: 1.5rem;
+}
+
+.card-number span {
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 90px;
+}
+
+/* Section headers ----------------------------------------------- */
+.liner {
+  border-top: 4px solid var(--maroon);
+  margin-top: -4.2rem;
+  margin-bottom: 8rem;
+  z-index: 1;
+}
+
+.section-header {
+  z-index: 1000;
+}
+
+.section-header span {
+  background: var(--page-bg);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  /* font-variant: small-caps; */
+  font-size: 2.5rem;
+  /* border-top: 2px dotted var(--maroon); */
+  /* border-bottom: 2px solid var(--maroon);
+  padding-top: 1rem;
+  padding-bottom: 1rem; */
+}
+
+.card-event-header {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* presidential address section ---------------------------------------- */
+.bg-presidential {
+  background: rgba(32, 54, 76, .5) !important;
+}
+
+/* search box */
+#search-box {
+  margin-top: 3rem;
+  outline: none;
+  background: #e9ecef;
+  background: var(--white);
+  padding: 1rem 1rem .25rem;
+  margin-bottom: 1.5rem;
+  /* border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; */
+}
+
+#search-box input {
+  text-shadow: none !important;
+  color: var(--graphite);
+  border: none !important;
+  /* background: #e9ecef !important; */
+  background: var(--white);
+  outline: none;
+}
+
+.input-group-text {
+  background: var(--white);
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: silver;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: silver;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: silver;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: silver;
+}
+
+.form-control::placeholder {
+  color: silver;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+#committee-section {
+  margin-top: 2rem;
+}

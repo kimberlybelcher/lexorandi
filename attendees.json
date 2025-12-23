@@ -1,0 +1,52 @@
+{
+  "attendees": [
+    {
+      "name": "Person McPersonface",
+      "link": "https://bootstrapr.io",
+      "image": "img/resources/image.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "description": "Bootstrapr generates bespoke Bootstrap 3 and 4 components without writing a line of code.",
+      "type": "plenary"
+    },
+    {
+      "name": "Person McPersonface",
+      "link": "https://bootstrapr.io",
+      "image": "img/resources/image.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "description": "Bootstrapr generates bespoke Bootstrap 3 and 4 components without writing a line of code.",
+      "type": "plenary"
+    },
+    {
+      "name": "Person McPersonface",
+      "link": "https://bootstrapr.io",
+      "image": "img/resources/image.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "description": "Bootstrapr generates bespoke Bootstrap 3 and 4 components without writing a line of code.",
+      "type": "plenary"
+    },
+    {
+      "name": "Person McPersonface",
+      "link": "https://bootstrapr.io",
+      "image": "img/resources/image.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "description": "Bootstrapr generates bespoke Bootstrap 3 and 4 components without writing a line of code.",
+      "type": "plenary"
+    },
+    {
+      "name": "Person McPersonface",
+      "link": "https://bootstrapr.io",
+      "image": "img/resources/image.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "description": "Bootstrapr generates bespoke Bootstrap 3 and 4 components without writing a line of code.",
+      "type": "plenary"
+    },
+    {
+      "name": "Person McPersonface",
+      "link": "https://bootstrapr.io",
+      "image": "img/resources/image.jpg",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      "description": "Bootstrapr generates bespoke Bootstrap 3 and 4 components without writing a line of code.",
+      "type": "plenary"
+    },
+  ]
+}
