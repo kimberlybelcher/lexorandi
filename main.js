@@ -1,20 +1,33 @@
 $(document).ready(function () {
 
-  // Load the sponsors dynamically
-  $("#sponsors").load("sponsors.html", function () {
-    console.log("Sponsors loaded.");
-  });
+  window.onload = function () {
+    let slides = 
+        document.getElementsByClassName('carousel-item');
 
-  // Load the footer dynamically
-  $("#footer").load("footer.html", function () {
-    console.log("Footer loaded.");
-    $('[data-toggle="tooltip"]').tooltip();
-  });
+    function addActive(slide) {
+        slide.classList.add('active');
+    }
 
-  // Load the sponsors dynamically
-  $("#jumbotron").load("jumbotron.html", function () {
-    console.log("Jumbotron loaded.");
-  });
+    function removeActive(slide) {
+        slide.classList.remove('active');
+    }
+
+    addActive(slides[0]);
+    setInterval(function () {
+        for (let i = 0; i < slides.length; i++) {
+            if (i + 1 == slides.length) {
+                addActive(slides[0]);
+                setTimeout(removeActive, 350, slides[i]);
+                break;
+            }
+            if (slides[i].classList.contains('active')) {
+                setTimeout(removeActive, 350, slides[i]);
+                addActive(slides[i + 1]);
+                break;
+            }
+        }
+    }, 1500);
+};
 
   // Scroll to top ---------------------------------------------------------------
   window.onscroll = function () {
