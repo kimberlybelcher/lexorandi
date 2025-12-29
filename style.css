@@ -187,19 +187,11 @@ body {
 
 /* Jumbotron ----------------------------------------------- */
 .jumbotron {
-  /* linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .4)), */
-  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://live.staticflickr.com/65535/55012471201_45215d5479.jpg");
-  box-sizing: border-box;
-  font-style: normal;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 375px;
-  margin-bottom: 0 !important;
+  background-color: #920202;
 }
 
-.jumbotron h1, .jumbotron p {
-  /* text-shadow: 1px 1px lightslategray; */
+.custom-text-color {
+  color: #FFFFFF !important;
 }
 
 /* South Bend Time ----------------------------------------- */
