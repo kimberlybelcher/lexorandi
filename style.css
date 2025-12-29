@@ -27,7 +27,15 @@ html {
   font-size: 16px;
   box-sizing: border-box;
 }
+/* Jumbotron class */
+.jumbotron {
+   background: linear-gradient(rgba(7, 55, 99, 0.75), rgba(7, 55, 99, 0.75)), url('https://live.staticflickr.com/65535/55012471201_45215d5479.jpg') center/cover no-repeat;
+}
 
+/* Custom Text Color */
+.custom-text-color {
+   color: #FFFFFF !important;
+}
 body {
   box-sizing: border-box;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
